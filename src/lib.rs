@@ -772,7 +772,7 @@ pub struct Resources {
 
 /// A structure representing a `pid`. Currently implementations exist for `u64` and
 /// `std::process::Child`.
-#[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord, Copy, Clone)]
 pub struct CgroupPid {
     /// The process identifier
     pub pid: u64,
